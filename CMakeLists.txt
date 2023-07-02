@@ -10,4 +10,4 @@ link_directories("lib")
 aux_source_directory(src/ SRC_LIST) # 指定原始碼所在目錄，並將檔案名稱存在 SRC_LIST 變數中
 add_executable(bbtan-cpp ${SRC_LIST}) # 建立一個可執行檔，名稱為 bbtan-cpp 並附上原始碼檔案
 
-target_link_libraries(bbtan-cpp libSDL3_test.a libSDL3.so libSDL3.so.0 libSDL3.so.0.0.0)
+target_link_libraries(bbtan-cpp libSDL2.a libSDL2_test.a libSDL2main.a)

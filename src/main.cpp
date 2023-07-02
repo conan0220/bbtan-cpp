@@ -6,7 +6,7 @@ const int WIDTH = 800, HEIGHT = 600;
 int main(int argc, char* argv[]) {
     SDL_Init( SDL_INIT_EVERYTHING );
 
-    SDL_Window *window = SDL_CreateWindow( "Hello SDL WORLD", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WIDTH, HEIGHT, SDL_WINDOW_ALLOW_HIGHDPI );
+    SDL_Window *window = SDL_CreateWindow( "Hello SDL WORLD", -100, -100, WIDTH, HEIGHT, SDL_WINDOW_ALLOW_HIGHDPI );
 
     if ( NULL == window ) {
         std::cout << "Could not create window: " << SDL_GetError( ) << std::endl;
